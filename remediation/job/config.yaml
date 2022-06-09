@@ -32,7 +32,7 @@ actions:
           - "This should restart a service"
   - name: "This is a test task"
     events:
-      - name: "sh.keptn.event.test-task.triggered"
+      - name: "sh.keptn.event.remote-task.triggered"
     tasks:
       - name: "Greet the world"
         image: "alpine"
