@@ -8,6 +8,7 @@ spec:
       sequences:
         - name: remediation
           tasks:
+            - name: "remote-task"
             - name: "get-action"
             - name: "action"
             - name: "evaluation"
