@@ -1,0 +1,26 @@
+apiVersion: spec.keptn.sh/0.1.4
+kind: Remediation
+metadata:
+  name: remediation-configuration
+spec:
+  remediations:
+  - problemType: "Memory saturation"
+    actionsOnOpen:
+    - name: "Recycle Pools Action"
+      action: recycleapppools-task
+      description: "Recycle Application Pools"
+  - problemType: "Response Time"
+    actionsOnOpen:
+    - name: "Response Club Action"
+      action: responsetimeclub-task
+      description: "Response Time Club Application Pool Recycle"
+  - problemType: "Service Stopped"
+    actionsOnOpen:
+    - name: "Restart Service Action"
+      action: restartservice-task
+      description: "Restart a Down Service"
+  - problemType: "default"
+    actionsOnOpen:
+    - name: "Test Action"
+      action: test
+      description: "Test automated remediation"
