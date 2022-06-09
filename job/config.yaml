@@ -1,0 +1,42 @@
+apiVersion: v2
+actions:
+  - name: "Memory Saturation Remediation"
+    events:
+      - name: "sh.keptn.event.recycleapppools-task.triggered"
+    tasks:
+      - name: "Recycle App Pools"
+        image: "alpine"
+        cmd:
+          - echo
+        args:
+          - "This Should Recycle App Pools"
+  - name: "Response Club Remediation"
+    events:
+      - name: "sh.keptn.event.responsetimeclub-task.triggered"
+    tasks:
+      - name: "Recyle Reponse Club App Pools"
+        image: "alpine"
+        cmd:
+          - echo
+        args:
+          - "This should recyle app pools for the response club"
+  - name: "Service Down Remediation"
+    events:
+      - name: "sh.keptn.event.restartservice-task.triggered"
+    tasks:
+      - name: "Restart a Service"
+        image: "alpine"
+        cmd:
+          - echo
+        args:
+          - "This should restart a service"
+  - name: "This is a test task"
+    events:
+      - name: "sh.keptn.event.test-task.triggered"
+    tasks:
+      - name: "Greet the world"
+        image: "alpine"
+        cmd:
+          - echo
+        args:
+          - "Hello World"
