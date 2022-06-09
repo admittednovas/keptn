@@ -22,5 +22,5 @@ spec:
   - problemType: "default"
     actionsOnOpen:
     - name: "Test Action"
-      action: test
+      action: remote-task
       description: "Test automated remediation"
